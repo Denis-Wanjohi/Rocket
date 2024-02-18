@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"   defer></script>
+</head>
+<body class="min-h-screen dark:bg-black dark:text-white">
+    <header class=" bg-teal-400 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center ">
+            <h1 class="text-3xl font-medium">
+                <a href="#">
+                    🚀 Acme
+                </a>
+            </h1>
+            <div>
+                <!-- mobile view -->
+                <button id="humbuger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8" name="one"  type="submit">
+                    <!-- &#9776 -->
+                    <div class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 
+                            before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500
+                            after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500
+                    "></div>
+                </button>
+                <!-- mobile hidden -->
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+
+                    <a href="#rocket" class="hover:opacity-100">Our Rockets</a>
+                    <a href="#testimonial" class="hover:opacity-100">Testimonial </a>
+                    <a href="#contact" class="hover:opacity-100">Contact Us</a>
+                </nav>
+            </div>
+        </section>
+        <!-- MOBILE MENU -->
+        <section id="mobile-menu" class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+            <!-- <button class="text-8xl self-end px-6 sm:hidden">
+                &times;  
+            </button> -->
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#hero" class="w-full text-center py-6 hover:opacity-9">Home</a>
+                <a href="#testimonial" class="w-full text-center py-6 hover:opacity-9">Testimonials</a>
+                <a href="#rocket" class="w-full text-center py-6 hover:opacity-9">Our Rockets</a>
+                <a href="#contact" class="w-full text-center py-6 hover:opacity-9">Contact Us</a>
+            </nav>
+        </section>
+    </header>
+    <main class="max-w-4xl mx-auto">
+        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+                    Lorem ipsum <span class="text-indigo-400 underline">dolor</span>  sit amet.
+                </h2>
+                <p class="mt-4 max-w-md text-2xl text-center sm:text-left text-slate-700 dark:text-slate-300">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, accusamus.
+                </p>
+                <p class="mt-4 max-w-md flex justify-center text-2xl text-center sm:text-left text-slate-700 dark:text-slate-300">
+                    Think Acme.
+                </p>
+            </article>
+            <img class="max-w-md" src="./img/maxresdefault(1).jpg" alt="">
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w1/2">
+
+        <section id="rocket" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Our Rockets
+            </h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img class=" w-40 h-40 rounded-full" src="/build/img/porsche-718-cayman-gt4-clubsport-2019-554504.jpg" alt="">
+                    <h3 class="pt-4 text-3xl text-center text-slate-900 dark:text-white">Explore</h3>
+                    <p class="pt-4 text-xl text-center text-slate-900 dark:text-white hidden sm:block">$</p>
+                    <p class="pt-4 text-xl text-center text-slate-900 dark:text-white sm:hidden">Affordable Explaration</p>
+                </li>
+
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img class=" w-40 h-40 rounded-full" src="/build/img/porsche-718-cayman-gt4-clubsport-2019-554512.jpg" alt="">
+                    <h3 class="pt-4 text-3xl text-center text-slate-900 dark:text-white">Explore</h3>
+                    <p class="pt-4 text-xl text-center text-slate-900 dark:text-white hidden sm:block">$</p>
+                    <p class="pt-4 text-xl text-center text-slate-900 dark:text-white sm:hidden">Affordable Explaration</p>
+                </li>
+
+                <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+                    <img class=" w-40 h-40 rounded-full" src="/build/img/Porsche-718_Cayman_GT4_Clubsport-2019-1600-38.jpg" alt="">
+                    <h3 class="pt-4 text-3xl text-center text-slate-900 dark:text-white">Explore</h3>
+                    <p class="pt-4 text-xl text-center text-slate-900 dark:text-white hidden sm:block">$</p>
+                    <p class="pt-4 text-xl text-center text-slate-900 dark:text-white sm:hidden">Affordable Explaration</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w1/2">
+
+        <section id="testimonial" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Testimonial
+            </h2>
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-x-3 before:translate-y-2
+                             after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2  after:-translate-y-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sunt. Architecto, quisquam aliquam doloribus perferendis nulla voluptates explicabo quo pariatur.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right text-slate-500 dark:text-slate-400">
+                    &#8212;Whale Boys
+                </figcaption>
+            </figure>
+
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-x-3 before:translate-y-2
+                             after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2  after:-translate-y-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sunt. Architecto, quisquam aliquam doloribus perferendis nulla voluptates explicabo quo pariatur.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right text-slate-500 dark:text-slate-400">
+                    &#8212;Whale Boys
+                </figcaption>
+            </figure>
+
+            <figure class="my-12">
+                <blockquote class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-x-3 before:translate-y-2
+                             after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2  after:-translate-y-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sunt. Architecto, quisquam aliquam doloribus perferendis nulla voluptates explicabo quo pariatur.
+                    </p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:text-2xl text-right text-slate-500 dark:text-slate-400">
+                    &#8212;Whale Boys
+                </figcaption>
+            </figure>
+
+
+
+        </section>
+
+        <hr class="mx-auto bg-black dark:bg-white w1/2">
+
+        <section id="contact" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height">
+            <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+                Contact Us
+            </h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" required placeholder="subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none">
+                <label for="message">message</label>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="your message"
+                class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+                ></textarea>
+                <button type="submit" class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 text-center rounded-xl border border-slate-900 dark:border-none">
+                    Submit
+                </button>
+            </form>
+        </section>
+        <footer id="footer" class="bg-teal-700 text-white text-xl">
+            <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+                <address>
+                    <h2>Acne Rockets</h2><br>
+                    555 meru <br>
+                    Briston, Meru 3242234 <br>
+                    Email : <a href="mailto:acne@gmail.com">acne@gmail.com</a><br>
+                    Phone: <a href="tel:+12123123132">123132312</a>
+                </address>
+                <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                    <a href="#rocket" class="hover:opacity-25">Our Rockets</a>
+                    <a href="#testimonial" class="hover:opacity-25">Testimonial</a>
+                    <a href="#contact" class="hover:opacity-25">Contact us</a>
+                </nav>
+                <div class="flex flex-col sm:gap-2">
+                    <p class="text-right">Copyright &copy;
+                        <span id="year">2022</span>
+                    </p>
+                    <p class="text-right">All Rights Reserved</p>
+                </div>
+            </section>
+        </footer>
+
+    </main>
+</body>
+</html>
